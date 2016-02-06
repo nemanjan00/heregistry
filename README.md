@@ -8,7 +8,7 @@
 
 ## Example: 
 
-```bash
+```
 root@ubuntu:~# ./build.sh php-example registry.example.org:5000 /root/php-getting-started
 -----> PHP app detected
 -----> Bootstrapping...
