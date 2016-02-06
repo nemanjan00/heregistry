@@ -1,5 +1,7 @@
 # heregistry
 
+Tool for building docker container using Herokuish and pushing it to private docker registry.
+
 ## Usage: 
 
 ```bash
