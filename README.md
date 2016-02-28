@@ -2,6 +2,8 @@
 
 Tool for building docker container using Herokuish and pushing it to private docker registry.
 
+It is CI friendly since it will exit with error code if herokuish fail. 
+
 ## Usage: 
 
 ### Build
