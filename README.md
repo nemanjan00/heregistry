@@ -4,14 +4,24 @@ Tool for building docker container using Herokuish and pushing it to private doc
 
 ## Usage: 
 
+### Build
+
 ```bash
-./build.sh container-name registry.example.org:5000 /path/to/app
+./build.sh container-name /path/to/app
+```
+
+### Deploy
+
+```bash
+./deploy.sh container-name registry.example.org:5000 latest
 ```
 
 ## Example: 
 
+### Build: 
+
 ```
-root@ubuntu:~# ./build.sh php-example registry.example.org:5000 /root/php-getting-started
+root@ubuntu:~# ./build.sh php-example /root/php-getting-started
 -----> PHP app detected
 -----> Bootstrapping...
 -----> Installing system packages...
@@ -103,6 +113,12 @@ root@ubuntu:~# ./build.sh php-example registry.example.org:5000 /root/php-gettin
 -----> Checking for additional extensions to install...
 -----> Discovering process types
        Procfile declares types -> web
+```
+
+### Deploy: 
+
+```bash
+root@ubuntu:~# ./deploy.sh php-example registry.example.org:5000 latest
 The push refers to a repository [registry.example.org:5000/php-example]
 8cff901218dd: Pushed 
 102dbdca4aef: Pushed 
