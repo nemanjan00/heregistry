@@ -5,7 +5,7 @@ SOURCE="$2"
 
 # Build docker container from source dir
 
-ID=$(docker run -d -v $3:/tmp/app gliderlabs/herokuish /build)
+ID=$(docker run -d -v $SOURCE:/tmp/app gliderlabs/herokuish /build)
 
 # Attach to build container to display log
 
